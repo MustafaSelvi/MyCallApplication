@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <com.genband.kandy.api.services.calls.KandyView
+        android:id="@+id/kandy_local_video_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp" />
+
+    <com.genband.kandy.api.services.calls.KandyView
+        android:id="@+id/kandy_remote_video_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="251dp"
+        android:layout_marginLeft="251dp"
+        android:layout_marginTop="320dp" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="356dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="183dp"
+        android:layout_toStartOf="@+id/btnCall"
+        android:background="@color/colorPrimaryDark"
+        android:text="Accept" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnCall"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btnhold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAccept"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:text="Hold" />
+
+</RelativeLayout>
